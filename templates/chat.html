@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Bot</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Feedback Bot 🤖</h2>
+
+    <form method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <select name="rating" required>
+            <option value="">Rate Our Service</option>
+            <option>⭐ 1</option>
+            <option>⭐ 2</option>
+            <option>⭐ 3</option>
+            <option>⭐ 4</option>
+            <option>⭐ 5</option>
+        </select>
+
+        <textarea name="message" placeholder="Your Feedback" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
